@@ -1,8 +1,16 @@
+/* eslint-disable indent */
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {
-    appDir: true,
-  },
-}
+	swcMinify: true,
+	reactStrictMode: false,
+	experimental: {
+		appDir: true,
+	},
+	images: {
+		domains: ["fakestoreapi.com"],
+		unoptimized: false,
+	}
+};
 
-module.exports = nextConfig
+// eslint-disable-next-line no-undef
+module.exports = nextConfig;
