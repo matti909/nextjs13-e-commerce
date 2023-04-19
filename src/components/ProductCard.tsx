@@ -24,8 +24,8 @@ function ProductCard({ data }: Props) {
         />
       </div>
       <div className="top-2">
-        <p>name: {data.title}</p>
-        <p>precio: ${data.price}</p>
+        <h2 className="break-words">name: {data.title}</h2>
+        <span className="max-h-24">precio: ${data.price}</span>
       </div>
     </div>
   );

@@ -11,6 +11,7 @@ export default async function Home() {
   const products = await fetchProducts();
   return (
     <main className="p-4 font-bold">
+      <h1 className="mt-10 mb-10 font-semibold text-center">BODEGA</h1>
       <div>
         <Collection products={products} />
       </div>
